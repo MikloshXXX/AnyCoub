@@ -49,6 +49,10 @@ namespace AnyCoub
                     }
                 }
 
+                Console.WriteLine("Work is finished! Press any button to finish!");
+
+                Console.ReadKey();
+
                 return;
             }
 

@@ -76,10 +76,6 @@ namespace AnyCoub
 
             await FFMpegService.MakeCoub(basePath, title, mp3Path, mp4Path, duration);
 
-            progress.Report(0.9);
-
-            await Task.Delay(200);
-
             progress.Report(1);
 
             await Task.Delay(200);

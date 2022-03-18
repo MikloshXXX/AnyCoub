@@ -31,8 +31,8 @@ namespace AnyCoub
             var conv = FFmpeg.Conversions.New()
                 .AddStream(videoStream)
                 .AddStream(audioStream)
-                .SetOutput(output)
-                .UseHardwareAcceleration(HardwareAccelerator.auto, VideoCodec.h264, VideoCodec.h264);
+                .SetOutput(output);
+
             await conv.Start();
         }
     }
